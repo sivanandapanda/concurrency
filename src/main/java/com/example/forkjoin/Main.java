@@ -11,6 +11,8 @@ public class Main {
         FactorialSquareCalculator calculator = new FactorialSquareCalculator(10);
 
         forkJoinPool.execute(calculator);
+
+        forkJoinPool.shutdownNow();
     }
 
 }
